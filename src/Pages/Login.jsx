@@ -97,7 +97,7 @@ const Login = () => {
                 </div>
                 <div className="flex gap-3 justify-center mt-8">
                     <p>New to this site?</p>
-                    <Link className="underline text-lg" to='/register'>Sign Up</Link>
+                    <Link className="underline text-lg text-blue-600" to='/register'>Sign Up</Link>
                 </div>
             </div>
         </div>

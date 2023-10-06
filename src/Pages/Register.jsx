@@ -107,14 +107,13 @@ const Register = () => {
 
             <p className="mt-5">Or Sign up using</p>
             <div className="flex gap-3 justify-center my-3">
-                <img className="w-8 cursor-pointer" src="/facebook.jpg" alt="" />
                 <img onClick={handleGoogleLogin} className="w-8 cursor-pointer" src="/google.jpg" alt="" />
                 <img onClick={handleGithubLogin} className="w-8 cursor-pointer" src="/GitHub-Mark.png" alt="" />
 
             </div>
             <div className="flex gap-3 justify-center mt-8">
                 <p>Already have an account?</p>
-                <Link className="underline text-lg" to='/login'>Login now</Link>
+                <Link className="underline text-lg text-blue-600" to='/login'>Login now</Link>
             </div>
         </div>
     </div>
