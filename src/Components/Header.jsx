@@ -48,14 +48,15 @@ const Header = () => {
                     {
                         user ? <>
                             <div className="flex gap-4 items-center">
-                                <p className="text-xl font-bold">{user.displayName}</p>
+                                <p className="text-xl font-bold hidden md:inline-block">{user.displayName}</p>
                                 <div className="dropdown dropdown-end">
                                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                         <div className="w-10 rounded-full">
                                             <img src={user.photoURL} />
                                         </div>
                                     </label>
-                                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52">
+                                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box bg-slate-300">
+                                        <li><p className="text-sm md:hidden">{user.displayName}</p></li>
                                         <li><Link to='/profile'>Profile</Link></li>
                                         <li><button onClick={handleLogout}>Logout</button></li>
 

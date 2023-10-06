@@ -1,0 +1,52 @@
+[
+    {
+      "id": 1,
+      "title": "Photography",
+      "description": "Capture the beautiful moments of your special day with our professional photography services.",
+      "price": "50 k",
+      "photo": "https://i.ibb.co/k4Y4YhG/photography.jpg",
+      "day": "2 day coverage"
+    },
+    {
+      "id": 2,
+      "title": "Catering Services",
+      "description": "Delight your guests with a wide range of culinary delights from our catering team.",
+      "price": "100 k",
+      "photo": "https://i.ibb.co/pvzGt6B/catering.webp",
+      "day": "Per event"
+    },
+    {
+      "id": 3,
+      "title": "Lighting Services",
+      "description": "Set the mood and ambiance with our professional lighting services.",
+      "price": "70 k",
+      "photo": "https://i.ibb.co/Y8qFZX4/event-lighting.jpg",
+      "day": "Per event"
+    },
+    {
+      "id": 4,
+      "title": "Music and Entertainment Service",
+      "description": "Keep the party going with our music and entertainment services.",
+      "price": "100 k",
+      "photo": "https://i.ibb.co/FzqWCp7/music.jpg",
+      "day": "Per event"
+    },
+
+    {
+      "id": 5,
+      "title": "Stage Decoration",
+      "description": "Transform your wedding stage with our creative stage decoration services.",
+      "price": "80 k",
+      "photo": "https://i.ibb.co/8Kv54k0/stage.jpg",
+      "day": "Per event"
+    },
+    {
+      "id": 6,
+      "title": "Venue and Hotels",
+      "description": "Find the perfect venue and accommodations for your wedding celebration.",
+      "price": "100 k",
+      "photo": "https://i.ibb.co/LPkyBt0/hotel.jpg",
+      "day": "Per event"
+    }
+  ]
+  

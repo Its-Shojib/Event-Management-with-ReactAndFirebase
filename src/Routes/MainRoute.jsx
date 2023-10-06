@@ -8,6 +8,7 @@ import About from './../Pages/About';
 import Contact from './../Pages/Contact';
 import PrivateRoute from "./PrivateRoute";
 import Profile from "../Pages/Profile";
+import Services from './../Pages/Services';
 
 
 const router = createBrowserRouter([
@@ -18,7 +19,8 @@ const router = createBrowserRouter([
         children:[
             {
                 path: "/",
-                element: <Home></Home>
+                element: <Home></Home>,
+                loader: ()=> fetch('/data.json')
             },
             {
                 path: "/login",
@@ -39,6 +41,10 @@ const router = createBrowserRouter([
             {
                 path: "/profile",
                 element: <PrivateRoute><Profile></Profile></PrivateRoute>
+            },
+            {
+                path: "/services/:id",
+                element: <PrivateRoute><Services></Services></PrivateRoute>
             },
         ]
     },
