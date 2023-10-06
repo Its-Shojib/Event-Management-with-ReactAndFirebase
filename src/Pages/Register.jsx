@@ -5,13 +5,13 @@ import { BsFillPersonFill,BsFillFileImageFill } from 'react-icons/bs';
 import { useContext, useState } from "react";
 import { FaEyeSlash, FaEye } from 'react-icons/fa';
 import { AuthContext } from "../AuthProvider/AuthProvier";
-import { ToastContainer, toast } from 'react-toastify';
-
+import swal from 'sweetalert';
 
 const Register = () => {
 
     let [showPassword, setShowPassword] = useState(false);
     let {createUser, googleSignIn, githubSignIn } = useContext(AuthContext)
+
     let navigate = useNavigate()
     let handleCreateUser = (e) => {
         e.preventDefault();
@@ -22,23 +22,25 @@ const Register = () => {
         createUser(email,password)
         .then(result => {
             console.log(result.user);
-            toast.success("Wow so easy!");
+            swal("Good job!", "Register Success!", "success");
             e.target.reset();
             navigate('/')
         })
         .catch(error => {
             console.log(error.message);
+            swal("Error!", error.message, "error");
         })
     }
     let handleGoogleLogin = () => {
         googleSignIn()
         .then(result => {
             console.log(result.user);
-            toast.success("Wow so easy!");
+            swal("Good job!", "Sign-in Successfuly!", "success");
             navigate('/')
         })
         .catch(error => {
             console.log(error.message);
+            swal("Error!", error.message, "error");
         })
 
     }
@@ -46,11 +48,12 @@ const Register = () => {
         githubSignIn()
         .then(result => {
             console.log(result.user);
-            toast("Wow so easy!");
+            swal("Good job!", "Sign-in Successfuly!", "success");
             navigate('/')
         })
         .catch(error => {
             console.log(error.message);
+            swal("Error!", error.message, "error");
         })
 
     }
@@ -106,12 +109,11 @@ const Register = () => {
                     Register</button>
 
             </form>
-            <ToastContainer />
+
             <p className="mt-5">Or Sign up using</p>
             <div className="flex gap-3 justify-center my-3">
                 <img onClick={handleGoogleLogin} className="w-8 cursor-pointer" src="/google.jpg" alt="" />
                 <img onClick={handleGithubLogin} className="w-8 cursor-pointer" src="/GitHub-Mark.png" alt="" />
-
             </div>
             <div className="flex gap-3 justify-center mt-8">
                 <p>Already have an account?</p>

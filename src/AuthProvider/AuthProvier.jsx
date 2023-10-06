@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import auth from "../Firebase/Firebase.config";
 import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut, GoogleAuthProvider, signInWithPopup, GithubAuthProvider } from 'firebase/auth'
 
-
-
 export const AuthContext = createContext(null);
 
 const AuthProvider = ({ children }) => {
@@ -33,6 +31,7 @@ const AuthProvider = ({ children }) => {
     }
     let githubSignIn = () =>{
         setLoading(true);
+
         return signInWithPopup(auth,githubProvider);
     }
 

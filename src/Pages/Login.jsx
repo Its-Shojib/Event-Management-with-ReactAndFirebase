@@ -4,14 +4,14 @@ import { RiLockPasswordFill } from 'react-icons/ri';
 import { useContext, useState } from "react";
 import { FaEyeSlash, FaEye } from 'react-icons/fa';
 import { AuthContext } from "../AuthProvider/AuthProvier";
-import { ToastContainer, toast } from 'react-toastify';
-
+import swal from 'sweetalert';
 
 const Login = () => {
     let [showPassword, setShowPassword] = useState(false);
-
-    let { SignInUser, googleSignIn, githubSignIn } = useContext(AuthContext)
+    let { SignInUser, googleSignIn, githubSignIn} = useContext(AuthContext)
     let navigate = useNavigate()
+
+
     let handleLogin = (e) => {
         e.preventDefault();
         let email = e.target.email.value;
@@ -22,22 +22,24 @@ const Login = () => {
             .then(result => {
                 console.log(result.user);
                 e.target.reset();
-                toast.success("Wow so easy!");
+                swal("Good job!", "Sign-in Successfuly!", "success");
                 navigate('/')
             })
             .catch(error => {
                 console.log(error.message);
+                swal("Error!", error.message, "error");
             })
     }
     let handleGoogleLogin = () => {
         googleSignIn()
             .then(result => {
                 console.log(result.user);
-                toast.success("Wow so easy!");
+                swal("Good job!", "Sign-in Successfuly!", "success");
                 navigate('/')
             })
             .catch(error => {
                 console.log(error.message);
+                swal("Error!", error.message, "error");
             })
 
     }
@@ -45,15 +47,14 @@ const Login = () => {
         githubSignIn()
             .then(result => {
                 console.log(result.user);
-                toast("Wow so easy!");
+                swal("Good job!", "Sign-in Successfuly!", "success");
                 navigate('/')
             })
             .catch(error => {
                 console.log(error.message);
+                swal("Error!", error.message, "error");
             })
-
     }
-
 
     return (
         <div className="bg-gradient-to-r from-violet-500 to-fuchsia-500 flex justify-center items-center min-h-[646px] rounded-lg">
@@ -100,7 +101,6 @@ const Login = () => {
                     <Link className="underline text-lg text-blue-600" to='/register'>Sign Up</Link>
                 </div>
             </div>
-            <ToastContainer />
         </div>
     );
 };
