@@ -16,7 +16,9 @@ const Header = () => {
                 <li><NavLink to='/profile'>Profile</NavLink></li>
             </>
         }
-        <li><NavLink to='/login'>Login</NavLink></li>
+        {
+            !user && <li><NavLink to='/login'>Login</NavLink></li>
+        }
     </>
 
 
@@ -37,7 +39,7 @@ const Header = () => {
                             {links}
                         </ul>
                     </div>
-                    <h1 className="text-3xl font-bold hover:text-orange-700 text-rose-800">Weading Planner</h1>
+                    <h1 className="text-3xl font-bold hover:text-orange-700 text-rose-800">Social Events Planner</h1>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 text-white">

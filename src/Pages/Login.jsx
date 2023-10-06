@@ -22,7 +22,7 @@ const Login = () => {
             .then(result => {
                 console.log(result.user);
                 e.target.reset();
-                toast("Wow so easy!");
+                toast.success("Wow so easy!");
                 navigate('/')
             })
             .catch(error => {
@@ -31,32 +31,33 @@ const Login = () => {
     }
     let handleGoogleLogin = () => {
         googleSignIn()
-        .then(result => {
-            console.log(result.user);
-            toast("Wow so easy!");
-            navigate('/')
-        })
-        .catch(error => {
-            console.log(error.message);
-        })
+            .then(result => {
+                console.log(result.user);
+                toast.success("Wow so easy!");
+                navigate('/')
+            })
+            .catch(error => {
+                console.log(error.message);
+            })
 
     }
     let handleGithubLogin = () => {
         githubSignIn()
-        .then(result => {
-            console.log(result.user);
-            toast("Wow so easy!");
-            navigate('/')
-        })
-        .catch(error => {
-            console.log(error.message);
-        })
+            .then(result => {
+                console.log(result.user);
+                toast("Wow so easy!");
+                navigate('/')
+            })
+            .catch(error => {
+                console.log(error.message);
+            })
 
     }
 
 
     return (
         <div className="bg-gradient-to-r from-violet-500 to-fuchsia-500 flex justify-center items-center min-h-[646px] rounded-lg">
+
             <div className="bg-gray-400 w-8/12 md:w-4/12 text-center p-10 rounded-lg">
                 <h2 className="text-3xl font-bold">Login</h2>
                 <form onSubmit={handleLogin}>
@@ -86,20 +87,20 @@ const Login = () => {
                     <button
                         className="bg-gradient-to-r from-fuchsia-500 to-violet-500 w-full py-2 text-white font-semibold text-lg rounded-xl" type="submit">
                         Login</button>
-                        <ToastContainer />
+
                 </form>
 
                 <p className="mt-5">Or Sign up using</p>
                 <div className="flex gap-3 justify-center my-3">
                     <img onClick={handleGoogleLogin} className="w-8 cursor-pointer" src="/google.jpg" alt="" />
                     <img onClick={handleGithubLogin} className="w-8 cursor-pointer" src="/GitHub-Mark.png" alt="" />
-
                 </div>
                 <div className="flex gap-3 justify-center mt-8">
                     <p>New to this site?</p>
                     <Link className="underline text-lg text-blue-600" to='/register'>Sign Up</Link>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };

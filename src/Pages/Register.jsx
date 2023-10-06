@@ -22,7 +22,7 @@ const Register = () => {
         createUser(email,password)
         .then(result => {
             console.log(result.user);
-            toast("Wow so easy!");
+            toast.success("Wow so easy!");
             e.target.reset();
             navigate('/')
         })
@@ -34,7 +34,8 @@ const Register = () => {
         googleSignIn()
         .then(result => {
             console.log(result.user);
-            toast("Wow so easy!");
+            toast.success("Wow so easy!");
+            navigate('/')
         })
         .catch(error => {
             console.log(error.message);
@@ -46,6 +47,7 @@ const Register = () => {
         .then(result => {
             console.log(result.user);
             toast("Wow so easy!");
+            navigate('/')
         })
         .catch(error => {
             console.log(error.message);
@@ -102,9 +104,9 @@ const Register = () => {
                 <button
                     className="bg-gradient-to-r from-violet-500 to-fuchsia-500 w-full py-2 text-white font-semibold text-lg rounded-xl" type="submit">
                     Register</button>
-                    <ToastContainer />
-            </form>
 
+            </form>
+            <ToastContainer />
             <p className="mt-5">Or Sign up using</p>
             <div className="flex gap-3 justify-center my-3">
                 <img onClick={handleGoogleLogin} className="w-8 cursor-pointer" src="/google.jpg" alt="" />
