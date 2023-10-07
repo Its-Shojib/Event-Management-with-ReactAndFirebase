@@ -10,10 +10,10 @@ const DataCard = ({ item }) => {
         <div data-aos="flip-left">
             <div className="card bg-indigo-200 my-5">
                 <figure className="px-5 pt-5">
-                    <img src={photo} alt="Shoes" className="rounded-xl h-72 w-full" />
+                    <img src={photo} alt="" className="rounded-xl h-80 w-full" />
                 </figure>
                 <div className="card-body items-center text-center">
-                    <h2 className="card-title">{title}</h2>
+                    <h2 className="card-title text-rose-800 text-3xl">{title}</h2>
                     <p>{description}</p>
                     <div className="card-actions">
                         <Link className='bg-cyan-600 px-3 py-2 rounded-md' to={`/services/${id}`}>Details</Link>

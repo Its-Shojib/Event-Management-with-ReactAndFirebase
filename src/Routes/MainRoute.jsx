@@ -4,11 +4,11 @@ import Error from "../Layout/Error";
 import Home from "../Pages/Home";
 import Login from './../Pages/Login';
 import Register from "../Pages/Register";
-import About from './../Pages/About';
 import Contact from './../Pages/Contact';
 import PrivateRoute from "./PrivateRoute";
 import Profile from "../Pages/Profile";
 import Services from './../Pages/Services';
+import PhotoAlbum from "../Pages/PhotoAlbum";
 
 
 const router = createBrowserRouter([
@@ -31,8 +31,8 @@ const router = createBrowserRouter([
                 element: <Register></Register>
             },
             {
-                path: "/about",
-                element: <PrivateRoute> <About></About></PrivateRoute>
+                path: "/photoalbum",
+                element: <PrivateRoute><PhotoAlbum></PhotoAlbum></PrivateRoute>
             },
             {
                 path: "/contact",

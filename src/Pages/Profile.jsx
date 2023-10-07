@@ -4,15 +4,17 @@ import { AuthContext } from './../AuthProvider/AuthProvier';
 const Profile = () => {
     let { user } = useContext(AuthContext)
     return (
-        <div className="card">
-            <figure className="px-10 pt-10">
-                <img src={user.photoURL} alt="Shoes" className="rounded-xl" />
-            </figure>
-            <div className="card-body items-center text-center">
-                <h2 className="card-title text-xl font-bold">{user.displayName}</h2>
+        <div className="my-10 mb-20 relative md:w-8/12 mx-auto">
+            <img className="h-[300px] w-full" src="/public/cover.jpg" alt="" />
+            <div className=" w-5/12 md:w-2/12 mx-auto">
+                <img src={user.photoURL} alt="" className="rounded-full w-44 absolute bottom-28" />
             </div>
-        </div>
+            <div className="mt-32 text-center">
+                <h2 className="text-2xl font-bold">Name: {user.displayName}</h2>
+                <p>Email: {user.email}</p>
+            </div>
 
+        </div>
     );
 };
 

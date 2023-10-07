@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AiOutlineMail } from 'react-icons/ai';
 import { RiLockPasswordFill } from 'react-icons/ri';
 import { useContext, useState } from "react";
@@ -10,7 +10,7 @@ const Login = () => {
     let [showPassword, setShowPassword] = useState(false);
     let { SignInUser, googleSignIn, githubSignIn} = useContext(AuthContext)
     let navigate = useNavigate()
-
+    let location = useLocation();
 
     let handleLogin = (e) => {
         e.preventDefault();
@@ -23,7 +23,7 @@ const Login = () => {
                 console.log(result.user);
                 e.target.reset();
                 swal("Good job!", "Sign-in Successfuly!", "success");
-                navigate('/')
+                navigate(location.state ? location.state : '/');
             })
             .catch(error => {
                 console.log(error.message);

@@ -11,8 +11,8 @@ const WhyChooseUs = () => {
         <div className="flex flex-col md:flex-row gap-5 my-10 bg-gray-400 rounded-xl">
             <div className="flex justify-center items-center flex-1 ">
                 <div className="space-y-3 px-4" data-aos="flip-up">
-                    <p className="text-xl font-semibold">OVER 20 YEARS HOSTING EVENTS</p>
-                    <h2 className="text-4xl font-bold ">Why choose us?</h2>
+                    <p className="text-xl font-semibold">OVER <span className="text-rose-800">20 YEARS</span> HOSTING EVENTS</p>
+                    <h2 className="text-4xl font-bold "><span className="text-rose-800">Why</span> choose us?</h2>
                     <p className="text-lg font-semibold">Social Event Planner have been established for over 20 years,<br /> hosting thousands of weddings, birthday celebrations,<br /> christenings, charity fundraisers, gala balls, <br /> Christmas parties and a variety of corporate events. </p>
 
                     <Link to='/about'>
@@ -21,11 +21,11 @@ const WhyChooseUs = () => {
                 </div>
 
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-white flex-1 px-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 text-white flex-1 p-4">
                 {/* Card-1 */}
                 <div className="card bg-black" data-aos="flip-up">
                     <figure className="px-10 pt-10">
-                        <img src="/event.png" alt="Shoes" className="rounded-xl h-40" />
+                        <img src="/event.png" alt="" className="rounded-xl h-40" />
                     </figure>
                     <div className="card-body items-center text-center">
                         <h2 className="card-title">Your next event</h2>
@@ -35,7 +35,7 @@ const WhyChooseUs = () => {
                 {/* Card-2 */}
                 <div className="card bg-black" data-aos="flip-up">
                     <figure className="px-10 pt-10">
-                        <img src="/people.png" alt="Shoes" className="rounded-xl h-40" />
+                        <img src="/people.png" alt="" className="rounded-xl h-40" />
                     </figure>
                     <div className="card-body items-center text-center">
                         <h2 className="card-title">Large capacity</h2>
@@ -45,7 +45,7 @@ const WhyChooseUs = () => {
                 {/* Card-3 */}
                 <div className="card bg-black" data-aos="flip-up">
                     <figure className="px-10 pt-10">
-                        <img src="/experience.png" alt="Shoes" className="rounded-xl h-40" />
+                        <img src="/experience.png" alt="" className="rounded-xl h-40" />
                     </figure>
                     <div className="card-body items-center text-center">
                         <h2 className="card-title">Experience the finest</h2>
@@ -55,7 +55,7 @@ const WhyChooseUs = () => {
                 {/* Card-4 */}
                 <div className="card bg-black" data-aos="flip-up">
                     <figure className="px-10 pt-10">
-                        <img src="/car.png" alt="Shoes" className="rounded-xl h-40 bg-white" />
+                        <img src="/car.png" alt="" className="rounded-xl h-40 bg-white" />
                     </figure>
                     <div className="card-body items-center text-center">
                         <h2 className="card-title">Easily accessible</h2>
