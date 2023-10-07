@@ -19,9 +19,9 @@ console.log(greetign);
 <p>
 
 #### Answer: ?
-
+- B
 <i>Write your explanation here</i>
-
+here, greetign is not declare. we see that greeting is declare before but greetign is not declared. We have to declare a variable before use use it. So the ans is "B".
 </p>
 </details>
 
@@ -95,9 +95,9 @@ console.log(sayHi());
 <p>
 
 #### Answer: ?
-
+- B
 <i>Write your explanation here</i>
-
+here, the name variable has not any value to print. at initial stage it has no value. if we pass a argument it will be added name parameter and that value will be printed. but in this case the name parameter does not have any value to print and doesnot take any value, So the name will be undefined and the ans will be "B".
 </p>
 </details>
 
@@ -123,7 +123,7 @@ console.log(count);
 <p>
 
 #### Answer: ?
-
+- C
 <i>Write your explanation here</i>
 
 </p>

@@ -2,10 +2,10 @@
 
 const Banner = () => {
     return (
-        <div className="my-5 bg-">
+        <div className="my-5">
             <div className="carousel w-full">
                 <div id="slide1" className="carousel-item relative w-full">
-                    <div className="hero h-[450px] bg-cover" style={{ backgroundImage: 'url(https://i.ibb.co/k4Y4YhG/photography.jpg)' }}>
+                    <div className="hero h-[450px]  bg-current" style={{ backgroundImage: 'url(https://i.ibb.co/FhgYLPm/Wedding2.jpg)' }}>
                         <div className="hero-overlay bg-opacity-60"></div>
                         <div className="hero-content text-center text-neutral-content">
                             <div className="max-w-md">

@@ -1,6 +1,7 @@
 
 import { Outlet } from 'react-router-dom';
 import Header from './../Components/Header';
+import Footer from '../Components/Footer';
 const MainLayout = () => {
     return (
         <div>
@@ -9,6 +10,9 @@ const MainLayout = () => {
             </div>
             <div className="max-w-screen-2xl mx-auto px-4">
                 <Outlet></Outlet>
+            </div>
+            <div className='max-w-screen-2xl mx-auto px-4'>
+                <Footer></Footer>
             </div>
         </div>
     );

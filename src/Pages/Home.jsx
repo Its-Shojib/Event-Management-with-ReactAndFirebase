@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import DataCard from "../Components/DataCard";
 import Banner from './../Components/Banner';
+import WhyChooseUs from './../Components/WhyChooseUs';
 
 const Home = () => {
     let items = useLoaderData();
@@ -20,6 +21,8 @@ const Home = () => {
                     }
                 </div>
             </div>
+
+            <WhyChooseUs></WhyChooseUs>
         </div>
     );
 };
