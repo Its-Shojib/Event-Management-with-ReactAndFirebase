@@ -1,8 +1,9 @@
 [
   {
     "id": 1,
-    "title": "Weddings",
+    "title": "Weddings Planners",
     "description": "Celebrate your special day with our wedding planning services.",
+    "description2": "Wedding event services encompass a wide range of offerings designed to make your special day truly magical. These services typically include venue selection, décor and floral arrangements, catering, photography, videography, entertainment, and coordination. Wedding planners ensure every detail aligns with your vision, from the elegant invitations to the stunning cake. They also manage timelines, seating arrangements, and handle unexpected issues, allowing you to focus on creating unforgettable memories with loved ones. Whether it's a grand affair or an intimate gathering, wedding event services are dedicated to transforming your dream wedding into a reality.",
     "price": "100 k",
     "photo": "https://i.ibb.co/TM89Tj2/wedding.jpg",
     "photo2": "https://i.ibb.co/k4Y4YhG/photography.jpg",
@@ -12,14 +13,16 @@
     "id": 2,
     "title": "Birthday Parties",
     "description": "Host a fun and memorable birthday party with our party planning services.",
+    "description2": "Birthday parties services are tailored to celebrate life's milestones with joy and creativity. Event planners assist in selecting themes, coordinating venues, arranging entertainment, and crafting delightful menus. They cater to all ages, from children's character-themed parties to sophisticated adult soirées. Balloon artists, magicians, and cake designers work together to create a memorable atmosphere. Whether it's a milestone birthday or a simple gathering, these services ensure that each guest enjoys a day filled with laughter, surprises, and a sense of belonging.",
     "price": "50 k",
     "photo": "https://i.ibb.co/wJsJQDm/birthday.jpg",
     "day": "Per event"
   },
   {
     "id": 3,
-    "title": "Anniversaries",
+    "title": "Anniversary Planners",
     "description": "Mark a milestone anniversary with our anniversary celebration services.",
+    "description2": "Anniversary planners specialize in commemorating love stories through meticulously planned events. These services offer romantic and thoughtful ways to celebrate your relationship milestones. They help select enchanting venues, create personalized décor, arrange for live music, and curate a memorable dining experience. Whether it's a first anniversary or a golden one, anniversary planners ensure that each moment is steeped in love and nostalgia. Their attention to detail allows couples to rekindle their connection and relive cherished memories, making each anniversary a heartfelt celebration.",
     "price": "60 k",
     "photo": "https://i.ibb.co/K7qPwRg/anniversary.jpg",
     "day": "Per event"
@@ -27,7 +30,8 @@
   {
     "id": 4,
     "title": "Engagement Parties",
-    "description": "Begin your journey to wedded bliss with our engagement party planning services.",
+    "description": "Begin your journey to wedded with our engagement party planning services.",
+    "description2": "Engagement parties services assist couples in announcing their commitment in style. These planners help choose venues that set the perfect mood, provide elegant decorations, and ensure a seamless flow of events. From customized invitations to engagement-themed games, they create a memorable experience for family and friends. Engagement party services focus on capturing the joy and excitement of this special moment as you embark on your journey to wedded bliss. Whether it's an intimate gathering or a lavish affair, they make sure the event reflects your unique love story.",
     "price": "50 k",
     "photo": "https://i.ibb.co/7KWhyGk/engaged.jpg",
     "day": "Per event"
@@ -35,7 +39,8 @@
   {
     "id": 5,
     "title": "Retirement Parties",
-    "description": "Celebrate the end of a career and the start of a new chapter with our retirement party services.",
+    "description": "Celebrate the end of a career with our retirement party services.",
+    "description2": "Retirement parties services are designed to honor a career's accomplishments and mark the transition to a new chapter in life. Event planners create a fitting farewell, taking care of venue selection, décor, catering, and entertainment. They often incorporate elements that celebrate the retiree's passions and achievements. These services ensure that guests leave with fond memories and the retiree feels appreciated and valued. Retirement parties can be as formal or relaxed as desired, making it a perfect opportunity to bid farewell to the working world in style.",
     "price": "40 k",
     "photo": "https://i.ibb.co/LpgSt8c/retirement.jpg",
     "day": "Per event"
@@ -44,6 +49,7 @@
     "id": 6,
     "title": "Baby Shower",
     "description": "Welcome a new addition to the family with our baby shower planning services.",
+    "description2": "Baby shower event services are dedicated to celebrating the impending arrival of a new bundle of joy. Event planners assist in selecting themes, arranging venues, and creating adorable decorations. They coordinate games and activities that bring smiles and laughter to the gathering. Catering and dessert tables feature delightful treats that cater to every palate. Baby shower services focus on creating a warm and welcoming environment, ensuring the expectant parents feel loved and supported. These events provide cherished moments and precious gifts as the family prepares to welcome their newest member.",
     "price": "50 k",
     "photo": "https://i.ibb.co/41Bj64s/baby.jpg",
     "day": "Per event"

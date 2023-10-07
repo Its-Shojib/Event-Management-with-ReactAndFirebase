@@ -1,10 +1,16 @@
 import { Link } from "react-router-dom";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+    offset: 120, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 400,
+});
 const WhyChooseUs = () => {
     return (
-        <div className="flex flex-col md:flex-row my-10 bg-gray-400 rounded-xl">
-            <div className="flex justify-center items-center flex-1">
-                <div className="space-y-3">
+        <div className="flex flex-col md:flex-row gap-5 my-10 bg-gray-400 rounded-xl">
+            <div className="flex justify-center items-center flex-1 ">
+                <div className="space-y-3 px-4" data-aos="flip-up">
                     <p className="text-xl font-semibold">OVER 20 YEARS HOSTING EVENTS</p>
                     <h2 className="text-4xl font-bold ">Why choose us?</h2>
                     <p className="text-lg font-semibold">Social Event Planner have been established for over 20 years,<br /> hosting thousands of weddings, birthday celebrations,<br /> christenings, charity fundraisers, gala balls, <br /> Christmas parties and a variety of corporate events. </p>
@@ -15,9 +21,9 @@ const WhyChooseUs = () => {
                 </div>
 
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-white flex-1">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-white flex-1 px-4">
                 {/* Card-1 */}
-                <div className="card bg-black">
+                <div className="card bg-black" data-aos="flip-up">
                     <figure className="px-10 pt-10">
                         <img src="/event.png" alt="Shoes" className="rounded-xl h-40" />
                     </figure>
@@ -27,7 +33,7 @@ const WhyChooseUs = () => {
                     </div>
                 </div>
                 {/* Card-2 */}
-                <div className="card bg-black">
+                <div className="card bg-black" data-aos="flip-up">
                     <figure className="px-10 pt-10">
                         <img src="/people.png" alt="Shoes" className="rounded-xl h-40" />
                     </figure>
@@ -37,7 +43,7 @@ const WhyChooseUs = () => {
                     </div>
                 </div>
                 {/* Card-3 */}
-                <div className="card bg-black">
+                <div className="card bg-black" data-aos="flip-up">
                     <figure className="px-10 pt-10">
                         <img src="/experience.png" alt="Shoes" className="rounded-xl h-40" />
                     </figure>
@@ -47,7 +53,7 @@ const WhyChooseUs = () => {
                     </div>
                 </div>
                 {/* Card-4 */}
-                <div className="card bg-black">
+                <div className="card bg-black" data-aos="flip-up">
                     <figure className="px-10 pt-10">
                         <img src="/car.png" alt="Shoes" className="rounded-xl h-40 bg-white" />
                     </figure>

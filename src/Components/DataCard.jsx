@@ -1,11 +1,14 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 const DataCard = ({ item }) => {
     // eslint-disable-next-line no-unused-vars
-    let {id,title,description,price,photo,day} = item;
+    let {id,title,description,photo} = item;
     return (
-        <div>
-            <div className="card bg-indigo-200">
+        <div data-aos="flip-left">
+            <div className="card bg-indigo-200 my-5">
                 <figure className="px-5 pt-5">
                     <img src={photo} alt="Shoes" className="rounded-xl h-72 w-full" />
                 </figure>
@@ -17,11 +20,11 @@ const DataCard = ({ item }) => {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };
 DataCard.propTypes = {
     item: PropTypes.object,
 }
+
 export default DataCard;

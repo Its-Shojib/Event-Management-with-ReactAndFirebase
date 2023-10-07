@@ -4,7 +4,7 @@ import Header from './../Components/Header';
 import Footer from '../Components/Footer';
 const MainLayout = () => {
     return (
-        <div>
+        <div className='relative'>
             <div className="max-w-screen-2xl mx-auto px-4">
                 <Header></Header>
             </div>
