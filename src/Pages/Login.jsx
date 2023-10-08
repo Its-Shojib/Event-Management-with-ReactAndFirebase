@@ -26,7 +26,6 @@ const Login = () => {
                 navigate(location.state ? location.state : '/');
             })
             .catch(error => {
-                console.log(error.message);
                 swal("Error!", error.message, "error");
             })
     }
@@ -38,7 +37,6 @@ const Login = () => {
                 navigate('/')
             })
             .catch(error => {
-                console.log(error.message);
                 swal("Error!", error.message, "error");
             })
 
@@ -51,7 +49,6 @@ const Login = () => {
                 navigate('/')
             })
             .catch(error => {
-                console.log(error.message);
                 swal("Error!", error.message, "error");
             })
     }

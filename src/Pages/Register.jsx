@@ -43,13 +43,15 @@ const Register = () => {
                 updateProfile(auth.currentUser, {
                     displayName: myname, photoURL: myphoto
                 })
-                console.log(myname, myphoto);
+                .then(()=>{
+                    location.reload();
+                })
+                .catch()
                 swal("Good job!", "Register Success!", "success");
                 e.target.reset();
                 navigate('/')
             })
             .catch(error => {
-                console.log(error.message);
                 swal("Error!", error.message, "error");
             })
 
@@ -63,7 +65,6 @@ const Register = () => {
                 navigate('/')
             })
             .catch(error => {
-                console.log(error.message);
                 swal("Error!", error.message, "error");
             })
 
@@ -76,7 +77,6 @@ const Register = () => {
                 navigate('/')
             })
             .catch(error => {
-                console.log(error.message);
                 swal("Error!", error.message, "error");
             })
 
