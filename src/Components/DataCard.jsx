@@ -16,7 +16,7 @@ const DataCard = ({ item }) => {
                     <h2 className="card-title text-rose-800 text-3xl">{title}</h2>
                     <p>{description}</p>
                     <div className="card-actions">
-                        <Link className='bg-cyan-600 px-3 py-2 rounded-md' to={`/services/${id}`}>Details</Link>
+                        <Link className='bg-cyan-600 px-3 py-2 rounded-md text-white' to={`/services/${id}`}>See Details</Link>
                     </div>
                 </div>
             </div>
