@@ -18,10 +18,9 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
-- B
-<i>Write your explanation here</i>
-here, greetign is not declare. we see that greeting is declare before but greetign is not declared. We have to declare a variable before use use it. So the ans is "B".
+#### Answer: B
+
+In the code, there is a typo in the variable name. It's declared as greeting, but in the assignment statement, it's misspelled as greetign. Due to this typo, JavaScript does not recognize greetign as a variable that was declared, hence it throws a ReferenceError indicating that greetign is not defined.
 </p>
 </details>
 
@@ -43,10 +42,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C
 
-<i>Write your explanation here</i>
-
+In the code, the sum function takes two parameters a and b and returns their sum. However, when the sum function is called with sum(1, "2");, JavaScript performs type coercion, converting the number 1 to a string "1", and then performs string concatenation because one of the operands is a string. So, "1" and "2" are concatenated to form the string "12".
 </p>
 </details>
 
@@ -69,10 +67,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A
 
-<i>Write your explanation here</i>
-
+Here,In the code, "info.favoriteFood" is initially assigned the value "🍕", which is the first element of the food array. However, later in the code, it is reassigned the value "🍝". This reassignment does not affect the food array itself. Therefore, when you console.log(food), it will output the original array ['🍕', '🍫', '🥑', '🍔'].
 </p>
 </details>
 
@@ -94,10 +91,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
-- B
-<i>Write your explanation here</i>
-here, the name variable has not any value to print. at initial stage it has no value. if we pass a argument it will be added name parameter and that value will be printed. but in this case the name parameter does not have any value to print and doesnot take any value, So the name will be undefined and the ans will be "B".
+#### Answer: B
+
+In the code, the sayHi function expects one argument, name, to be passed when it is called. However, in the console.log(sayHi()); statement, no argument is provided, so name inside the function becomes undefined. As a result, the function returns "Hi there, undefined", which is logged to the console.
 </p>
 </details>
 
@@ -122,9 +118,8 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
-- C
-<i>Write your explanation here</i>
+#### Answer: C
 
+The code initializes a variable count to '0' and an array nums with values [0, 1, 2, 3]. It then uses the 'forEach' method to iterate over each element in the nums array. For each element num, it checks if num is truthy (not equal to 0) and increments the count by '1' if it is. Since the nums array contains three truthy values (1, 2, and 3), the count variable is incremented three times. As a result, the final value of count is "3".
 </p>
 </details>
