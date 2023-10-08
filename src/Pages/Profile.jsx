@@ -5,7 +5,7 @@ const Profile = () => {
     let { user } = useContext(AuthContext)
     return (
         <div className="my-10 mb-20 relative md:w-8/12 mx-auto">
-            <img className="h-[300px] w-full" src="/public/cover.jpg" alt="" />
+            <img className="h-[300px] w-full" src="/cover.jpg" alt="" />
             <div className=" w-5/12 md:w-2/12 mx-auto">
                 <img src={user.photoURL} alt="" className="rounded-full w-44 absolute bottom-28" />
             </div>

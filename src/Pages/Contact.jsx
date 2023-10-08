@@ -14,7 +14,7 @@ const Contact = () => {
                 </div>
             </div>
             <div className="flex-1">
-                <img src="/public/logo.jpg" alt="" />
+                <img src="/logo.jpg" alt="" />
             </div>
 
         </div>
