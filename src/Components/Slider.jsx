@@ -17,13 +17,19 @@ const Slider = () => {
             <div className='bg-gradient-to-r from-purple-400 to-lime-300 rounded-lg my-10 py-5 px-4'>
                 <Swiper
                     slidesPerView={'1'}
+                    // breakpoints={{
+                    //     320: { slidesPerView: 1, spaceBetween: 80 },
+                    //     480: { slidesPerView: 2, spaceBetween: 70 },
+                    //     768: { slidesPerView: 2, spaceBetween: 50 },
+                    //     1024: { slidesPerView: 3, spaceBetween: 150 },
+                    // }}
                     breakpoints={{
-                        320: { slidesPerView: 1, spaceBetween: 80 },
-                        480: { slidesPerView: 2, spaceBetween: 150 },
-                        768: { slidesPerView: 2, spaceBetween: 50 },
-                        1024: { slidesPerView: 3, spaceBetween: 150 },
+                        640: { slidesPerView: 1, spaceBetween: 20 },
+                        768: { slidesPerView: 2, spaceBetween: 90 },
+                        1024: { slidesPerView: 3, spaceBetween: 80 },
                     }}
-                    spaceBetween={50}
+
+                    // spaceBetween={50}
                     autoplay={true}
                     pagination={{
                         clickable: true,
