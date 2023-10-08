@@ -1,12 +1,15 @@
-# [Donation Campaign](https://merry-starship-994ff4.netlify.app)
+# [Event Planners](https://lighthearted-pavlova-d0c9c0.netlify.app)
 
+
+# Live Link: 
+   **https://lighthearted-pavlova-d0c9c0.netlify.app**
 # The Features are:
 
 * **Dynamic Routing:** You can go any tab without re-loading page.
-* **Search any Category data:** You can find-out any category by searching category name.
-* **Dynamic data loading:** Dynamic Cards are added with different color and category.
-* **View Details:** You can see Details by clicking any card in the Cards section.
-* **Donate Price:** You Can donate in any category without conflicting the duplicate data.
-* **Show More data:** You can see donated item in donation list. if you donate more than 4 item, you can see a button "Show More" and clicking this you can see all the donated item. 
-* **Donate Statistics:** You can see a beautifull pie-chart on statistics tab where you will see the donation statistics.
-* **Local-Storage:** All donated data loaded into local-storage,so you can't lose any data.
+* **Beautiful Design:** You can see the beautifull effect on the home page.
+* **Dynamic data loading:** Data loaded dynamically on home pages services.
+* **See Details:** You can See Details by clicking any card button in the Cards section and this will load you to another page if you are logged in otherwise you will dynamically navigate to login page.
+* **Custommer Review:** You can see the custommer review with automatic slider in home page.
+* **Photo Album:** You can see the photo album of event that we mannaged if you are logged in. 
+* **Dynamic Login-Logout:** If you just view our website you will find only home and login pages... but if you logged in or sign-up to our site you will find more feature like "Contact","Profile","Photo Album".
+* **Profile Page:** You can see your cute face on our website profile pages if you log in to our site.😁
