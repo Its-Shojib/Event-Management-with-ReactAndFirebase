@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 AOS.init();
 const DataCard = ({ item }) => {
     // eslint-disable-next-line no-unused-vars
-    let {id,title,description,photo} = item;
+    let {id,title,description,photo,price} = item;
     return (
         <div data-aos="flip-left">
             <div className="card bg-indigo-200 my-5">
@@ -15,6 +15,7 @@ const DataCard = ({ item }) => {
                 <div className="card-body items-center text-center">
                     <h2 className="card-title text-rose-800 text-3xl">{title}</h2>
                     <p>{description}</p>
+                    <p className='text-rose-800 font-semibold'>Price: {price}</p>
                     <div className="card-actions">
                         <Link className='bg-cyan-600 px-3 py-2 rounded-md text-white' to={`/services/${id}`}>See Details</Link>
                     </div>
